@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.lablicate.rest.CorsFilter">
+  <property name="osgi.jaxrs.extension" type="String" value="true"/>
+  <property name="osgi.jaxrs.name" type="String" value="CorsFilter"/>
+  <service scope="prototype">
+    <provide interface="javax.ws.rs.container.ContainerResponseFilter"/>
+  </service>
+  <implementation class="com.lablicate.rest.CorsFilter"/>
+</scr:component>
