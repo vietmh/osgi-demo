@@ -1,14 +1,12 @@
 Manifest-Version: 1.0
-Built-By: vietmaihoang
-Build-Jdk: 17.0.6
-Created-By: 17.0.6 (Eclipse Adoptium)
-Bnd-LastModified: 1677212913259
-Bundle-Description: The test.api API bundle - built using OSGi enRoute R
- 7
+Bnd-LastModified: 1677231445770
+Bundle-Description: The test.api API bundle - built using OSGi enRoute
+  R7
 Bundle-ManifestVersion: 2
 Bundle-Name: test.api
 Bundle-SymbolicName: com.lablicate.test.api
-Bundle-Version: 0.0.1.202302240428
+Bundle-Version: 0.0.1.202302240937
+Created-By: 17.0.6 (Eclipse Adoptium)
 Export-Package: test.api;version="1.0.0"
 Import-Package: java.lang
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
