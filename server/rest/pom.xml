@@ -34,6 +34,13 @@
 			<artifactId>test.combined</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.logging</artifactId>
+			<version>0.9.0.202302171017</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/../libs/org.eclipse.chemclipse.logging_0.9.0.202302171017.jar</systemPath>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

@@ -1,0 +1,2343 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.osgi.compatibility.state"/>
+      <attribute name="type" value="osgi.fragment"/>
+      <attribute name="version" value="1.2.800.v20221116-1440" type="Version"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="257049" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.osgi.compatibility.state_1.2.800.v20221116-1440.jar"/>
+      <attribute name="osgi.content" value="D2456C166C4FB760FA28237D4E359BD90EF1487B65DB2E3429B07BD7C1645E34"/>
+    </capability>
+    <requirement namespace="osgi.wiring.host">
+      <directive name="filter" value="(&amp;(osgi.wiring.host=org.eclipse.osgi)(bundle-version&gt;=3.12.0))"/>
+      <directive name="cardinality" value="multiple"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.11.0.v20220716-0839" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="bundle-version" value="1.11.0.v20220716-0839" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="version" value="1.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1955883814,842442375,872698850,-772066718,-2066814178,543758865,-691199681" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.core.tests"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="bundle-version" value="1.11.0.v20220716-0839" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.contexts"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1880240551,-1256630262,82420049,-1034806171,-991407557,1975015355,2118647004,-1428716134,1843257485,-2133340792,256464587,2035398868,-1749298862,-1456409502,872014921,1581156159,-1749072970,1438544124,-863952072" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="bundle-version" value="1.11.0.v20220716-0839" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.contexts.osgi"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1768907474,-1916079250" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.11.0.v20220716-0839" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.e4.core.contexts"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.11.0.v20220716-0839" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.e4.core.contexts"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="58865" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.e4.core.contexts_1.11.0.v20220716-0839.jar"/>
+      <attribute name="osgi.content" value="B441B5E86DB311E982C02F61608C9D687BA9F90FE82D73B7F6654CE9865CEBB2"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.inject)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.e4.core.di)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.util.function"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="description" value="OSGi Companion Code for org.osgi.util.function Version 1.2.0"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.202109301733" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.osgi.util.function"/>
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.function"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-503125994,679220772,1445582840,655935895,-1598661140,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.util.function"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.util.function"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="23641" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.util.function_1.2.0.202109301733.jar"/>
+      <attribute name="osgi.content" value="208819C7C71690C15A6BB8B187474E7F9D0147946B680182A62B9F222AE014EC"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact1)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.chemclipse.xxd.model"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="0.9.0.202212080224" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.chemclipse.xxd.model"/>
+      <attribute name="bundle-version" value="0.9.0.202212080224" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.chemclipse.xxd.model.quantitation"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1178644722" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="0.9.0.202212080224" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.chemclipse.xxd.model"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="0.9.0.202212080224" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.chemclipse.xxd.model"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="6321" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.chemclipse.xxd.model_0.9.0.202212080224.jar"/>
+      <attribute name="osgi.content" value="50668C39B14643CE9EC636849B9892EA07E8BA54189D9FA69648C977BDFDCEB2"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.common.collect)"/>
+      <attribute name="osgi.wiring.package" value="com.google.common.collect"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.core.runtime)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.chemclipse.model)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.chemclipse.msd.model)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.chemclipse.support)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.core.contenttype"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.8.200.v20220817-1539" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.contenttype"/>
+      <attribute name="bundle-version" value="3.8.200.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.content"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1953485582,567959011,964544709,-116925712,1278737203,-1044374296,-719614618,-2068422549,-582515561,133351732,995272218,-440058630,-434456961,554449014,-808558149,1221087003,-670914697,861210431,2135705368,1057576408,-524161098,-947434121,1345069849,-336602775,2082720251,2647074,1784074405,1325882305,800395153" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.contenttype"/>
+      <attribute name="bundle-version" value="3.8.200.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.content"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="821446448,-1511614217,-948945428,2111841098,1884289943,-1303252370,-1547327915,-1956963069,-1951361400,775051661,331467716,1784074405,-156615695,1693147872,-560119199" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.8.200.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.core.contenttype"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.8.200.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.core.contenttype"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="104269" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.core.contenttype_3.8.200.v20220817-1539.jar"/>
+      <attribute name="osgi.content" value="D32716BFB03E7F3244A5DF0F8816A8F0B6644A8C782F54062AF8A3B00E1B4E45"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.debug)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.ext)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.ext"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.preferences)(bundle-version&gt;=3.2.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.2.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.13.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+      <attribute name="osgi.identity" value="org.apache.felix.scr"/>
+      <attribute name="documentation" value="http://felix.apache.org/site/apache-felix-service-component-runtime.html"/>
+      <attribute name="description" value="Implementation of the Declarative Services specification 1.5"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.2.4" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.service.component"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.felix.scr"/>
+      <attribute name="bundle-version" value="2.2.4" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.scr.component"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1191330285,-1511829527" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.apache.felix.scr"/>
+      <attribute name="bundle-version" value="2.2.4" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.scr.info"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-704754736" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="2.2.4" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.apache.felix.scr"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="2.2.4" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.apache.felix.scr"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="402852" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.apache.felix.scr_2.2.4.jar"/>
+      <attribute name="osgi.content" value="F4A14DC142FAEE676C81757104469895CAF0B858C9326416B8246DA6ABAADD89"/>
+    </capability>
+    <capability namespace="osgi.extender">
+      <directive name="uses" value="org.osgi.service.component"/>
+      <attribute name="osgi.extender" value="osgi.component"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.component.runtime"/>
+      <attribute name="objectClass" value="org.osgi.service.component.runtime.ServiceComponentRuntime" type="List&lt;String&gt;"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.cm"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.metatype)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.metatype"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.felix.service.command)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.service.command"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.felix.scr.component)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.scr.component"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.felix.scr.info)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.apache.felix.scr.info"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.dto)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.10.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.dto)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.startlevel)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.startlevel"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.wiring)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.wiring"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.resource)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.resource"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component)(version&gt;=1.5.0)(!(version&gt;=1.6.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.runtime)(version&gt;=1.5.0)(!(version&gt;=1.6.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.runtime"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.runtime.dto)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.runtime.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(|(&amp;(osgi.ee=JavaSE)(version=1.7))(&amp;(osgi.ee=JavaSE/compact1)(version=1.8)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.e4.core.di"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.8.300.v20220817-1539" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di"/>
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.di"/>
+      <attribute name="version" value="1.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-67431940,1548133021,2064151896,1812145942" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di"/>
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.di.suppliers"/>
+      <attribute name="version" value="1.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1944444956,1568940663,1237318249,-697904979" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.core.contexts"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di"/>
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.di"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1556432485,-416611782,-1522831880,2104712440,-1181743212,-206435151,1561580590,-255078447,-1597065070,932717849" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di"/>
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.di.osgi"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-667665422,-353381089" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.core.contexts,org.eclipse.e4.core.di.extensions.supplier"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di"/>
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.di.shared"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-503514577" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.e4.core.di"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.8.300.v20220817-1539" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.e4.core.di"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="55598" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.e4.core.di_1.8.300.v20220817-1539.jar"/>
+      <attribute name="osgi.content" value="626BFBF221B2D037A0DDFC73790D1AEBE480DED6A3D863E456E3019190D47A41"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.inject)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.framework.log)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.5.1))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.e4.core.di.annotations)(bundle-version&gt;=1.4.0)(!(bundle-version&gt;=2.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=javax.annotation)(bundle-version&gt;=1.3.5)(!(bundle-version&gt;=2.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.e4.core.services"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="2.3.400.v20220915-1347" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.ui.workbench.swt"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.services"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-481103936,-1521699902,59587368,164515666,23942539,1210378782,-1600735406,-1691916516" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.internal.services.about"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-850273319,-958658697,1350346167,2137372112,968148036,-753504030,-1387424243" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.about"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="559757499,-1044151756" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.ui.workbench.swt"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.adapter"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="514145071" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.css.swt,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.contributions"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="762076113,-187560933" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.events"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2119486218" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.ui.bindings,  org.eclipse.e4.ui.services,  org.eclipse.e4.ui.workbench,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.e4.core.commands"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.log"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1227352138,-2013470288" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.nls"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1269947889,-1564759707,-2027783629,1904964002,2022246761,-1895049979,-1675388953,-765482755,1183226079,-1861017901,-172778863" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.e4.ui.workbench.swt,org.eclipse.e4.ui.progress,org.eclipse.ui.ide"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.statusreporter"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-622013677" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.services"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.services.translation"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-960363423,317844232,-269357340" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.e4.core.services"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="2.3.400.v20220915-1347" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.e4.core.services"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="73171" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.e4.core.services_2.3.400.v20220915-1347.jar"/>
+      <attribute name="osgi.content" value="ADFFD4B3037E540D40A4BF3850995753758B1AC639C2BEBE02500574F94F767D"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=1.3.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.inject)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.service.debug)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.service.localization)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.localization"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.util)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.event)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.4.2))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.4.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.preferences)(bundle-version&gt;=3.3.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.core.jobs)(bundle-version&gt;=3.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.e4.core.di)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.e4.core.contexts)"/>
+    </requirement>
+    <requirement namespace="osgi.extender">
+      <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.2)(!(version&gt;=2.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.core.runtime"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.26.100.v20221021-0005" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-version" value="3.26.100.v20221021-0005" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.preferences.legacy"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-216565729,-610634889,-1129487412" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-version" value="3.26.100.v20221021-0005" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.runtime"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-747538255,1488702064,76580,-240802599,-397449876,61379299,-163933246,1355179215" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-version" value="3.26.100.v20221021-0005" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime"/>
+      <attribute name="version" value="3.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2251323,-268685210,-452012937,-414002972,740009583,1939328147,-1901307053,1665285474,901203861,-637237544" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.26.100.v20221021-0005" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.core.runtime"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.26.100.v20221021-0005" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.core.runtime"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="76224" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.core.runtime_3.26.100.v20221021-0005.jar"/>
+      <attribute name="osgi.content" value="F90EBD2F052D602281840B2B8CD1F5A7B6D1CF2D5A85B7B0415C70456855D173"/>
+    </capability>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.osgi)(bundle-version&gt;=3.17.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.16.0))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.core.jobs)(bundle-version&gt;=3.13.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.11.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.preferences)(bundle-version&gt;=3.10.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.core.contenttype)(bundle-version&gt;=3.8.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.app)(bundle-version&gt;=1.6.0))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="javax.inject"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.0.v20220405-0441" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="javax.inject"/>
+      <attribute name="bundle-version" value="1.0.0.v20220405-0441" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2100193871,75032345,-922850799,756027530,79711796,509450219" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.0.v20220405-0441" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="javax.inject"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.0.v20220405-0441" type="Version"/>
+      <attribute name="osgi.wiring.host" value="javax.inject"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="33185" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="javax.inject_1.0.0.v20220405-0441.jar"/>
+      <attribute name="osgi.content" value="105297B04FDD778F2F488C9FDA096D2B7934FB4D56831735FEE6E3CEE7F0A675"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.service.event"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="description" value="OSGi Companion Code for org.osgi.service.event Version 1.4.1"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.4.1.202109301733" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.event"/>
+      <attribute name="bundle-version" value="1.4.1.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event"/>
+      <attribute name="version" value="1.4.1" type="Version"/>
+      <attribute name="bnd.hashes" value="2086568683,67338874,-1345319691,-468363275,1765379952,1940233037,-658393026,442928508,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.event"/>
+      <attribute name="bundle-version" value="1.4.1.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event.annotations"/>
+      <attribute name="version" value="1.4.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1745916922,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.event"/>
+      <attribute name="bundle-version" value="1.4.1.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event.propertytypes"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-286398322,1392506514,1798964286,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.4.1.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.service.event"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.4.1.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.service.event"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="47710" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.service.event_1.4.1.202109301733.jar"/>
+      <attribute name="osgi.content" value="9F11C68980DBD931850F3F27FC7C35E1D710ECC728FE872BD6D786CD7E4B7B5E"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact1)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.equinox.common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.17.0.v20221108-1156" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.resources,org.eclipse.pde.build"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.common"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.boot"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="972258187,-307099686,-565784626" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.contenttype,  org.eclipse.core.jobs,  org.eclipse.equinox.preferences,  org.eclipse.equinox.registry,  org.eclipse.core.runtime,  org.eclipse.core.runtime.compatibility,  org.eclipse.core.filesystem,  org.eclipse.equinox.security"/>
+      <directive name="mandatory" value="common"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.common"/>
+      <attribute name="common" value="split"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.runtime"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2086606091,192061295,323034635,-1771951548,-1704244866,-1116848009,1853141879,490644246,649107382,-813666275,1843661080,-1080441152,-598748808,-1526916287,1696364932,-1211232324,1327952164,1581344330,1554389439,1282966125,2105642653,1822434201,1521438731,-1963034754,-1960764844,-833084727,1295736040,1463617644,-1648419940" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="mandatory" value="common"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.common"/>
+      <attribute name="common" value="split"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime"/>
+      <attribute name="version" value="3.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1241371868,1970626406,-923963056,1088721744,-389921958,-1288540877,-954288284,972854791,-2061195500,602193189,318965445,1292179471,69897230,534131428,-1957975009,-165001037,774068630,-1445355109,2013101600,-1340947566,1407363691,2131186118,233318703,2480197,-1977065038,-2116481906,-1662587514,226517287,920439101,239859305,-1742950784,-362298661,-1808614382,-102531888,1748167450,-1073503187,546056046" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.common"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.text"/>
+      <attribute name="version" value="3.13.0" type="Version"/>
+      <attribute name="bnd.hashes" value="812449097,1732832193" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.common"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.events"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1265234774" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.common"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.17.0.v20221108-1156" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.common"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="150535" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.equinox.common_3.17.0.v20221108-1156.jar"/>
+      <attribute name="osgi.content" value="E85FEE16EBA255A451CBED66C03DC024267542036BDC590F7B7A6B3092959ADA"/>
+    </capability>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.osgi)(bundle-version&gt;=3.17.200)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="license" value="Proprietary: Copyright by Dr. Philip Wenig"/>
+      <attribute name="osgi.identity" value="com.lablicate.marketplace"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.5.0.202212080239" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.lablicate.marketplace"/>
+      <attribute name="bundle-version" value="1.5.0.202212080239" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.lablicate.marketplace"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2024019467,1688389266,-1890344378" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="com.lablicate.marketplace"/>
+      <attribute name="bundle-version" value="1.5.0.202212080239" type="Version"/>
+      <attribute name="osgi.wiring.package" value="com.lablicate.marketplace.model"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1391410207,1831410721,939157618,-1901307053,1189023616" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="1.5.0.202212080239" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.lablicate.marketplace"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="1.5.0.202212080239" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.lablicate.marketplace"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="18234" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="com.lablicate.marketplace_1.5.0.202212080239.jar"/>
+      <attribute name="osgi.content" value="37CE009753BCB9C71E942F4FCE634F4F86D8830B3E2FDC6DF4E00D4DF60A7941"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.equinox.internal.p2.touchpoint.natives)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.internal.p2.touchpoint.natives"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.p2.core)(version&gt;=2.0.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.p2.core"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.equinox.p2.metadata)(version&gt;=2.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.p2.metadata"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations)(version&gt;=1.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.core.runtime)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ui)(bundle-version&gt;=3.105.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ui.forms)(bundle-version&gt;=3.5.200))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ui.intro)(bundle-version&gt;=3.4.200))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.ui.intro.universal)(bundle-version&gt;=3.2.600))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.e4.ui.workbench)(bundle-version&gt;=0.10.100))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.chemclipse.rcp.ui.icons)(bundle-version&gt;=0.8.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.chemclipse.rcp.app.ui)(bundle-version&gt;=0.8.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.chemclipse.logging)(bundle-version&gt;=0.8.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.chemclipse.support.ui)(bundle-version&gt;=0.8.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.apache.commons.codec)(bundle-version&gt;=1.14.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.apache.commons.logging)(bundle-version&gt;=1.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.p2.repository)(bundle-version&gt;=2.3.200))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.p2.core)(bundle-version&gt;=2.4.100))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=net.openchrom.auth)(bundle-version&gt;=1.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=wrapped.com.konghq.unirest-java)(bundle-version&gt;=3.13.12))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.json)(bundle-version&gt;=1.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=wrapped.com.squareup.okhttp3.okhttp)(bundle-version&gt;=3.12.12))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=wrapped.io.socket.engine.io-client)(bundle-version&gt;=2.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=wrapped.io.socket.socket.io-client)(bundle-version&gt;=2.1.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=wrapped.com.squareup.okio.okio)(bundle-version&gt;=1.15.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=com.lablicate.keys)(bundle-version&gt;=1.5.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.core.jobs"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.13.200.v20221102-1024" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.jobs"/>
+      <attribute name="bundle-version" value="3.13.200.v20221102-1024" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.jobs"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="568284079,-1611026283,-836782085,-412930144,-2023253313,-442822469,-801011720,-1504949011,-1284763469,2070843170,498989447,1075554640,-1602905079,531354478,-1563312268,-1161824785,1062908422,1985180642,514354557,-497100008,1072643620,441712947,-1698218082,1609059546" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.tests.runtime.jobs"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.jobs"/>
+      <attribute name="bundle-version" value="3.13.200.v20221102-1024" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.jobs"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="568284079,-1611026283,-836782085,-412930144,-2023253313,-442822469,-801011720,-1504949011,-1284763469,2070843170,498989447,1075554640,-1602905079,531354478,-1563312268,-1161824785,1062908422,1985180642,514354557,-497100008,1072643620,441712947,-1698218082,1609059546" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.core.jobs"/>
+      <attribute name="bundle-version" value="3.13.200.v20221102-1024" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.jobs"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1172150646,-1771052968,1073231532,-1252875687,1672558534,69790996,-1111567800,1819713369,74653,1373975778,-1572627230,-1661016289,796965813,-1287851170" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.13.200.v20221102-1024" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.core.jobs"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.13.200.v20221102-1024" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.core.jobs"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="116937" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.core.jobs_3.13.200.v20221102-1024.jar"/>
+      <attribute name="osgi.content" value="F6303D411F5013AAC5E3491860392B7FDDC09B518D0EB63722B0926679CD9DBF"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.debug)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.packageadmin)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.packageadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.8.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.equinox.preferences"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.10.100.v20220710-1223" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.resources,org.eclipse.core.runtime,org.eclipse.equinox.p2.engine"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.preferences"/>
+      <attribute name="bundle-version" value="3.10.100.v20220710-1223" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.preferences"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1211083982,-2086606091,1982630255,-1661689287,-686108027,393367162,-597450686,640526871,176808529,-47314555,-1349624032,-1228254109,1265757423,674554010,-941458685,-982683180,1952852177,-1495056925,-1520568054,1942826533,-1934302573,-160238403,-1936160772,2026224790,1273089219,849098736,420272109,-902699264" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.preferences"/>
+      <attribute name="bundle-version" value="3.10.100.v20220710-1223" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.preferences.exchange"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1955350054,1134958499" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.preferences"/>
+      <attribute name="bundle-version" value="3.10.100.v20220710-1223" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.preferences"/>
+      <attribute name="version" value="3.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1999035419,-386877186,1175464352,-1658765538,-497513293,398063439,1976177576,-2086110904,-1741786929,-1340095910,173288092,-1676233060,925972302,-1542118552,-1677142842,-2125327477,2012592036,-595100001,1802932497,-977474593,1540836682,-336602775" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.10.100.v20220710-1223" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.preferences"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.10.100.v20220710-1223" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.preferences"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="138992" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.equinox.preferences_3.10.100.v20220710-1223.jar"/>
+      <attribute name="osgi.content" value="EE791BFA46E35E3551209B89B2152544A6F860A12C4AAB4A2F6C9C0CC3DD1DDA"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.framework.log)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.datalocation)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.datalocation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.debug)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.environment)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.environment"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.packageadmin)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.packageadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.2.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.2.0)(!(bundle-version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.osgi.service.prefs)(bundle-version&gt;=1.1.0)(!(bundle-version&gt;=1.2.0)))"/>
+      <directive name="visibility" value="reexport"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.equinox.registry"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.11.200.v20220817-1601" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.adapter"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-459866029,-791145390" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.registry"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1108744170,1030803114,-1643292696,-543495613,67376454,-885267698,807938963,1540290608,1041349779,1391410207,-972404007,31114023,-963615654,-961026895,-1043122631,387204872,-1341032542,-1678914357,1636186279,-856473220,-25790093,-2140710328,1860226304,-103064155,1912483913,-1995605506,364747638,-1361677605,1771730257,-1933841528,-2137924183,-371033111,-338232783,-166927315,-1763284645,-972663916,-1470651705,437144777,1484827132,569060206,2038476395,-1798764015,-46011024,-356868164,-1410117454,-2133242567,1888458257,2043863489,-1392600899,-1145840821" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.registry.osgi"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2086606091,96291165,770628455,-1514841990,-1167079013,-1670372725,1187056703,-807398348,1935483062" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.internal.registry.spi"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1961737226,-1153487146" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="mandatory" value="registry"/>
+      <attribute name="registry" value="split"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime"/>
+      <attribute name="version" value="3.7.0" type="Version"/>
+      <attribute name="bnd.hashes" value="105067061,-1973793183,-1683876081,605696210,-290204660,734498654,-69173770,1704695650,1716072762,-628310957,53675332,-1912849974,1835266920,351737340,-647233043" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.dynamichelpers"/>
+      <attribute name="version" value="3.4.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-263935479,-795663847,-985536732,-788303774,-1827365599" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.registry"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.spi"/>
+      <attribute name="version" value="3.4.0" type="Version"/>
+      <attribute name="bnd.hashes" value="322216070,-80896073,-383776706,-1607930128" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.registry"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.11.200.v20220817-1601" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.registry"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="200915" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.equinox.registry_3.11.200.v20220817-1601.jar"/>
+      <attribute name="osgi.content" value="7A3668CA406930213E3EDB8024AC72C51FBC3F289DE63A33254C8070AA8D0A3F"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <attribute name="osgi.wiring.package" value="javax.xml.parsers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.core.runtime.jobs)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.jobs"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.framework.console)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.console"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.datalocation)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.datalocation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.debug)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.environment)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.environment"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.service.localization)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.localization"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.resolver)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.resolver"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.storagemanager)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storagemanager"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.framework)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.packageadmin)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.packageadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+      <attribute name="osgi.wiring.package" value="org.xml.sax.helpers"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.15.100)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="osgi.identity" value="org.eclipse.equinox.app"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.6.200.v20220720-2012" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.app"/>
+      <attribute name="bundle-version" value="1.6.200.v20220720-2012" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.app"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-239741625,1852033640" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.app"/>
+      <attribute name="bundle-version" value="1.6.200.v20220720-2012" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.internal.app"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2086606091,-258139125,1813241769,1221995972,648760798,-543073476,-1372972477,841136754,929312551,2145273225,132971842,517996525,-895262934,-54326712,1239078500,448564855,-397449876,1993854795,-56183223" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.equinox.app"/>
+      <attribute name="bundle-version" value="1.6.200.v20220720-2012" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.application"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-545105431,1977094958,-1783521089,1032591615,-1008049288,-1550065021" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="1.6.200.v20220720-2012" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.equinox.app"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="1.6.200.v20220720-2012" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.equinox.app"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="93086" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.equinox.app_1.6.200.v20220720-2012.jar"/>
+      <attribute name="osgi.content" value="52840B5FE48ED8F50A26D792D21B2DB73B622A0A10D64C18883DA6FB85DCBC24"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.framework.console)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.console"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.framework.log)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.log"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.datalocation)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.datalocation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.debug)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.eclipse.osgi.service.environment)(version&gt;=1.1.0))"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.environment"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.service.runnable)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.runnable"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.storagemanager)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storagemanager"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.eclipse.osgi.util)"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.service.condpermadmin)"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.condpermadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.0.0))"/>
+      <directive name="resolution" value="optional"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.event"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.2.0))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.packageadmin"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.osgi.util.tracker)"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.registry)(bundle-version&gt;=3.4.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.equinox.common)(bundle-version&gt;=3.2.0)(!(bundle-version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <directive name="singleton" value="true"/>
+      <attribute name="copyright" value="Copyright (c) 2003, 2018 IBM Corporation and others. This program and the accompanying materials  are made available under the terms of the Eclipse Public License 2.0 which accompanies this distribution, and is available at https://www.eclipse.org/legal/epl-2.0/"/>
+      <attribute name="osgi.identity" value="org.eclipse.osgi"/>
+      <attribute name="documentation" value="http://www.eclipse.org"/>
+      <attribute name="description" value="OSGi System Bundle"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="3.18.200.v20221116-1324" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.core.runtime"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.adaptor"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="160374982,-669633007,-687089560" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.core.runtime.internal.adaptor"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1032049034,27666590,1822572602" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.osgi.service.log"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.equinox.log"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1691636729,1030976263,1410455818,-721225796,1692938259,1617755921,-2013470288,1421584687" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.osgi.report.resolution,  org.osgi.framework.wiring,  org.eclipse.osgi.framework.eventmgr,  org.osgi.framework.startlevel,  org.osgi.framework,  org.osgi.framework.hooks.resolver,  org.osgi.service.resolver,  org.osgi.resource,  org.eclipse.osgi.service.debug"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.container"/>
+      <attribute name="version" value="1.6.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1499275331,-1219601412,80204913,-866379748,-1984916852,1355797700,1218504777,-1992337533,-480146493,986027928,-787986409,1109643768,904984405,-170284359,449095534,449071984,374336127,2582974,1693367335,1230869951,458525656,-2032590313,1895597947,1524266386,-520173652,795427524,320762492,701906691,-437426510,-356883833,-1527855355,-605122796,1821503180,1123389745,993502383,1540761006,-700466789" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.eclipse.osgi.util,org.eclipse.osgi.container"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.container.builders"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2100654214,-1783372156" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.resource"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.container.namespaces"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="89537217,-1656746188,282546638" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.console"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1210986929,1576306236,117678431" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.eventmgr"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="67115090,917115616,-2029030736,1588126669,-2050817629,64324210,-1250395441,1236675807,349518308,-1407069485,1653745857,-1264805659,-1864829549,1792555300,1907836883,1385260189" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.internal.reliablefile"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1450055472,1855947014,-1951630588,394152967" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.log"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1881171078,824678284" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.framework.util"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1228254109,-1039436546,-1231344857,917115616,-2029030736,1588126669,-2050817629,-326896397,212551877,-671018015,-1620852146,-1835006106,-1995605506,-1234775013,959721541,238052525,-1968138932" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.debug"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="65906227,446370873,372563401,430374690" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.framework"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1439558801,-1073721747,2104386630,338397845,158324956,50747331,-991659630,752577173,-1009564751,-258350631,432170788,-2000297025,1179653981,1126467530,-2124923557,737871577,65975,1967778874,168369350,67204884,-1234449542,2289459,-1949102853,78515,2563,-1911543745,1346375835,78727453,1509499206,-1760457167,440074712,967635443,-781089880,1426698568,1699633218,602671064,-1242529377,1050141946,2089827940,-1409247314" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.osgi.tests"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.hookregistry"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1503926322,1569467544,229252942,1454033944,2018052768,1141939742,1378397452" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.loader"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1151492407,610973525,1340244643,-961914700,1889848995,-1770152230,-47845803,941166975,1338260240,-1237444828" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.loader.buddy"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1829591281,-586128683,1216636815,-570647144,-256013708,-614352799" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.loader.classpath"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1521637,778685685,911264596,-875511952,656255245,-990359634,852034792" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.loader.sources"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1115955892,-2020066542,1816451482,-1900614687,-1023817693" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.location"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1217657315,340234919,-1534456861,-1811061406,-2013585608,-1164284433,-1733074325" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.messages"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="77665" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.equinox.security.ui"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.provisional.service.security"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1581511175,1980010491,-905723455,-354758611,-1908775509" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.ui.workbench,org.eclipse.equinox.p2.artifact.repository"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.provisional.verifier"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="760369034,1295312162,1369048429,1342848733" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.equinox.security.ui"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.service.security"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2089817976" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.serviceregistry"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1214329006,484705004,-673822098,352512976,-334110293,-1282552686,1852947327,282743208,-450272394,-1821151366,-2025549010,-456552974,1106213629,268692146,-1340379647,1236675807,339743676,67115090,917115616,-2029030736,1237744720" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.signedcontent"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1745287840,1897174764,1666747081,1428284705,-1673978830,184926409,264847131,-2069547803,-898939259,808422542,-1036108955,1991380489,1081383278" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.internal.url"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2088416473,-369369838,1913447485,215253402,-996590133,824336304,-443977456,-469102283,1133360659,2126941359,-1330326381,1783581434" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.osgi.framework.launch,org.osgi.framework.connect"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.launch"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="159627895,-746149229" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.service.resolver,org.osgi.resource"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.report.resolution"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2622298,67115090,1410803924,-1177760480" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1965687765" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.debug"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-182015765,-957892929,143016658" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.environment"/>
+      <attribute name="version" value="1.4.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1581691183,683245889" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.localization"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-834055077,872172171" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.pluginconversion"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1223028346,-462201971" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.osgi.framework.hooks.resolver,org.osgi.framework.wiring"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.resolver"/>
+      <attribute name="version" value="1.6.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-366206901,1397507126,1599878650,623668097,-818230934,-1253204278,378282437,-804220788,-1314968549,498654658,1028333208,1124312223,1308830332,-276684762,1370220930,-128184346,80204913,1740510663,-1764231297,1262126772,-1288328230,-81831786,561389749,49268581" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.runnable"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="517927152,-1540377491,-1002174762,443123773" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.security"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2055427430" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.service.urlconversion"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="665086225" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.signedcontent"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="316666829,181376413,-1332839211,-458549075,1026195224" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-friends" value="org.eclipse.osgi.tests"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storage"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1252351377,-1995799240,-924593040,648316187,2622298,439143786,281339015,-240696462,-3261475,-504738487,-592662904,1712106506,1854371385,38374452,-219620773,1142331645,1549364429" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storage.bundlefile"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1398706416,-924687042,-1771244171,1810633292,-90229542,740451824,-1721463445,-495599364,833768916,1952504396,-243827276,-322078897,-287459585" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="x-internal" value="true"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storage.url.reference"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1937510614,99926975,-943100862" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.storagemanager"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-372931328,67115090,-1168473902" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.osgi.util"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1590903379,1546647487,77397,-20915771" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.dto"/>
+      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="bnd.hashes" value="68031,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+      <attribute name="version" value="1.10.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1739641231,-1582817297,322684510,582841244,2020069064,2000952482,-1749687149,-1919773011,1398930200,-472454707,-1764916362,-964568047,-719960689,1415731401,1067411795,-1546814169,1890845477,1335028569,1581691183,2104342424,-382080164,181304498,-1542623884,67115090,917115616,-2029030736,1588126669,-2050817629,-1416388428,1571408324,-1812965632,835705045,1664677525,958466835,252453431,500431109,135145786,162580661,1579819625,-405185345,691178052,-1227550718,2023331894,661742574,1367323455,-857658657,713485465,2016261304,49268581,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework.launch"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.connect"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2054157768,903750735,-113656298,-516135978,-1632496946,736730913,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.dto"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.dto"/>
+      <attribute name="version" value="1.8.0" type="Version"/>
+      <attribute name="bnd.hashes" value="524358109,1881162529,1509490121,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.hooks.bundle"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1844840619,2035031741,-614908260,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework.wiring"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.hooks.resolver"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="598476393,-1486853535,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.hooks.service"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="2035031741,-78470255,-614908260,-1341032542,-1341061097,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework.wiring"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.hooks.weaving"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-587084368,2119982882,-824610799,51116005,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.launch"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1744825890,-1822195380,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.resource"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.namespace"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-26628393,-701862183,419765152,-1057387405,-1980679651,-174520604,-2002521131,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.startlevel"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-2038076796,-30604096,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.dto"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.startlevel.dto"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1606901947,-1193489153,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.osgi.resource"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.wiring"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1230619814,-607154623,923104925,-1448518282,-924180409,920864580,1544118144,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.dto,org.osgi.resource.dto"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.wiring.dto"/>
+      <attribute name="version" value="1.3.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-456707582,-1518129128,-515892131,1520651259,1723955775,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.resource"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1209794872,-1038781125,2031256611,-276420562,2696357,-1703760862,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.dto"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.resource.dto"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1928519047,-849328220,1371532988,1732619855,-1392588079,-1277139206,1183732317,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.condition"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1142656251,-2123797061,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.condpermadmin"/>
+      <attribute name="version" value="1.1.2" type="Version"/>
+      <attribute name="bnd.hashes" value="1536659955,-303528860,553717775,1142656251,-2123796407,-1273254022,2037384995,-232779266,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1534135002,2054177710,2060375744,459075576,-1361742930,1955537649,-2013470288,-1030022714,971415866,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.service.log"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.log.admin"/>
+      <attribute name="version" value="1.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="939507583,-1280137761,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.packageadmin"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="212184403,-1740837175,978231585,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.permissionadmin"/>
+      <attribute name="version" value="1.2.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1648250528,1854532413,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.resource"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.resolver"/>
+      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="bnd.hashes" value="1806831839,760430819,1962956355,-276684762,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.startlevel"/>
+      <attribute name="version" value="1.1.1" type="Version"/>
+      <attribute name="bnd.hashes" value="402337890,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.url"/>
+      <attribute name="version" value="1.0.1" type="Version"/>
+      <attribute name="bnd.hashes" value="-1490887400,592539840,-545334374,1783581434,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.eclipse.osgi"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.tracker"/>
+      <attribute name="version" value="1.5.3" type="Version"/>
+      <attribute name="bnd.hashes" value="1388063880,597257994,356268086,1109968229,-1977816471,187068131,936658898,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.osgi"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <directive name="singleton" value="true"/>
+      <attribute name="bundle-version" value="3.18.200.v20221116-1324" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.osgi"/>
+    </capability>
+    <capability namespace="bnd.mainclass">
+      <attribute name="bnd.mainclass" value="org.eclipse.core.runtime.adaptor.EclipseStarter"/>
+      <attribute name="version" value="3.18.200.v20221116-1324" type="Version"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="1539162" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.osgi_3.18.200.v20221116-1324.jar"/>
+      <attribute name="osgi.content" value="EFA0779F1C0CDABB7FCBCED2ADBBF8632E1E8E239CB03ED9F37DD40C63A975D2"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.log"/>
+      <attribute name="objectClass" value="org.osgi.service.log.LogReaderService,org.eclipse.equinox.log.ExtendedLogReaderService" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.log"/>
+      <attribute name="objectClass" value="org.osgi.service.log.LoggerFactory,org.osgi.service.log.LogService,org.eclipse.equinox.log.ExtendedLogService" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.log.admin"/>
+      <attribute name="objectClass" value="org.osgi.service.log.admin.LoggerAdmin" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value=""/>
+      <attribute name="objectClass" value="org.eclipse.osgi.framework.log.FrameworkLog" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.datalocation.Location" type="List&lt;String&gt;"/>
+      <attribute name="type" value="osgi.user.area"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.datalocation.Location" type="List&lt;String&gt;"/>
+      <attribute name="type" value="osgi.instance.area"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.datalocation.Location" type="List&lt;String&gt;"/>
+      <attribute name="type" value="osgi.configuration.area"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.datalocation.Location" type="List&lt;String&gt;"/>
+      <attribute name="type" value="osgi.install.area"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.datalocation"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.datalocation.Location" type="List&lt;String&gt;"/>
+      <attribute name="type" value="eclipse.home.location"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.environment"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.environment.EnvironmentInfo" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.packageadmin"/>
+      <attribute name="objectClass" value="org.osgi.service.packageadmin.PackageAdmin" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.startlevel"/>
+      <attribute name="objectClass" value="org.osgi.service.startlevel.StartLevel" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.permissionadmin"/>
+      <attribute name="objectClass" value="org.osgi.service.permissionadmin.PermissionAdmin" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.condpermadmin"/>
+      <attribute name="objectClass" value="org.osgi.service.condpermadmin.ConditionalPermissionAdmin" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.resolver"/>
+      <attribute name="objectClass" value="org.osgi.service.resolver.Resolver" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.debug"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.debug.DebugOptions" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.urlconversion"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.urlconversion.URLConverter" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.localization"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.localization.BundleLocalization" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.service.security"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.service.security.TrustEngine" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.eclipse.osgi.signedcontent"/>
+      <attribute name="objectClass" value="org.eclipse.osgi.signedcontent.SignedContentFactory" type="List&lt;String&gt;"/>
+    </capability>
+    <capability namespace="osgi.service">
+      <directive name="uses" value="org.osgi.service.condition"/>
+      <attribute name="objectClass" value="org.osgi.service.condition.Condition" type="List&lt;String&gt;"/>
+      <attribute name="osgi.condition.id" value="true"/>
+    </capability>
+    <capability namespace="osgi.serviceloader">
+      <directive name="register" value="org.eclipse.osgi.launch.EquinoxFactory"/>
+      <attribute name="osgi.serviceloader" value="org.osgi.framework.connect.ConnectFrameworkFactory"/>
+    </capability>
+    <capability namespace="osgi.serviceloader">
+      <directive name="register" value="org.eclipse.osgi.launch.EquinoxFactory"/>
+      <attribute name="osgi.serviceloader" value="org.osgi.framework.launch.FrameworkFactory"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(| (&amp;(osgi.ee=JavaSE)(version=1.8)) (&amp;(osgi.ee=JavaSE/compact1)(version=1.8)) )"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.service.component"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="description" value="OSGi Companion Code for org.osgi.service.component Version 1.5.0"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.5.0.202109301733" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework"/>
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.component"/>
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1359478967,1162845426,-1732850158,-1228219406,518703469,-1056307054,1970033372,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.component"/>
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.propertytypes"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-1291567166,900884429,1388400167,-2062392351,-1195250627,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.framework,org.osgi.service.component.runtime.dto,org.osgi.util.promise"/>
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.component"/>
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.runtime"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1884290256,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.dto,org.osgi.framework.dto"/>
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.component"/>
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.runtime.dto"/>
+      <attribute name="version" value="1.5.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1401622534,1820653184,-338241868,-706379834,-655211827,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.service.component"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.5.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.service.component"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="66412" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.service.component_1.5.0.202109301733.jar"/>
+      <attribute name="osgi.content" value="120A22DB8758C0C2C27CB4A7686CA094150CA47067DC8A32D488D79E8BEB3609"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.dto)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework.dto)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.framework.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.runtime.dto)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.runtime.dto"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.promise)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact1)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html"/>
+      <attribute name="osgi.identity" value="javax.annotation"/>
+      <attribute name="documentation" value="https://www.eclipse.org"/>
+      <attribute name="description" value="Jakarta Annotations API"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.3.5.v20221112-0806" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="javax.annotation"/>
+      <attribute name="bundle-version" value="1.3.5.v20221112-0806" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+      <attribute name="version" value="1.3.5" type="Version"/>
+      <attribute name="bnd.hashes" value="-2004043409,1693669327,-783626505,424653815,-1100816956,-747788814,-276420562,20897285" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="javax.annotation"/>
+      <attribute name="bundle-version" value="1.3.5.v20221112-0806" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.security"/>
+      <attribute name="version" value="1.3.5" type="Version"/>
+      <attribute name="bnd.hashes" value="1788444563,-1077456939,-1614978202,1796849739,79322109" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="javax.annotation"/>
+      <attribute name="bundle-version" value="1.3.5.v20221112-0806" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.sql"/>
+      <attribute name="version" value="1.3.5" type="Version"/>
+      <attribute name="bnd.hashes" value="-1838143560,-1147875397" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.3.5.v20221112-0806" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.3.5.v20221112-0806" type="Version"/>
+      <attribute name="osgi.wiring.host" value="javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="49245" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="javax.annotation_1.3.5.v20221112-0806.jar"/>
+      <attribute name="osgi.content" value="CE0E1848D421738959EBF963B198329C6E20958106CD4868AF93DD861264595B"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation)(version&gt;=1.3.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation.security)(version&gt;=1.3.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.security"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.annotation.sql)(version&gt;=1.3.5))"/>
+      <attribute name="osgi.wiring.package" value="javax.annotation.sql"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=system.bundle)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.util.promise"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="description" value="OSGi Companion Code for org.osgi.util.promise Version 1.2.0"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.2.0.202109301733" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="org.osgi.util.function"/>
+      <attribute name="bundle-symbolic-name" value="org.osgi.util.promise"/>
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.promise"/>
+      <attribute name="version" value="1.2.0" type="Version"/>
+      <attribute name="bnd.hashes" value="712535039,65070753,-973241247,65915235,1335848159,-891069155,2104342424,885810947,77116,-1547713212,-2009290710,-674203470,-1807668168,2605629,-1892220507,350741825,1437638748,393463102,1872034202,578079082,1355436283,65921,1229938816,-122541857,695804588,-1926269803,1910929295,-1519433186,-2041294197,1473077508,-1850559427,1362672743,1360409019,-931148072,-374893917,-202516509,126968846,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.util.promise"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.2.0.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.util.promise"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="83400" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.util.promise_1.2.0.202109301733.jar"/>
+      <attribute name="osgi.content" value="FEF86E64F584D012A16A0306160764F6179663B90988A226C4641B920F3A4B36"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.function)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.util.function"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact1)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.e4.core.di.annotations"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.7.200.v20220613-1008" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.e4.core.di.annotations"/>
+      <attribute name="bundle-version" value="1.7.200.v20220613-1008" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.e4.core.di.annotations"/>
+      <attribute name="version" value="1.6.0" type="Version"/>
+      <attribute name="bnd.hashes" value="-730234459,-1692747453,226431161,345083733,-419538581,-14372992" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.7.200.v20220613-1008" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.e4.core.di.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.7.200.v20220613-1008" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.e4.core.di.annotations"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="14144" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.eclipse.e4.core.di.annotations_1.7.200.v20220613-1008.jar"/>
+      <attribute name="osgi.content" value="03EE7E1C748024117FD1421F0AF23737B8DD9C22A590774334377395EDE1F77E"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.inject)(version&gt;=1.0.0))"/>
+      <attribute name="osgi.wiring.package" value="javax.inject"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.eclipse.chemclipse.logging"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="0.9.0.202302171017" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.chemclipse.logging"/>
+      <attribute name="bundle-version" value="0.9.0.202302171017" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.chemclipse.logging.core"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="115155230,-2013470288" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.eclipse.chemclipse.logging"/>
+      <attribute name="bundle-version" value="0.9.0.202302171017" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.eclipse.chemclipse.logging.support"/>
+      <attribute name="version" value="0.0.0" type="Version"/>
+      <attribute name="bnd.hashes" value="1499275331" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="0.9.0.202302171017" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.eclipse.chemclipse.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="0.9.0.202302171017" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.eclipse.chemclipse.logging"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="8867" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="file:/home/vietmaihoang/openchrom-cloud-workspace/server/app/../libs/org.eclipse.chemclipse.logging_0.9.0.202302171017.jar"/>
+      <attribute name="osgi.content" value="0C28B575BC5A4E149D5EAF58FE08A539B86FE5984D3E5C9B9BD782240F8FEEB9"/>
+    </capability>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(osgi.wiring.bundle=org.eclipse.core.runtime)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.bundle">
+      <directive name="filter" value="(&amp;(osgi.wiring.bundle=org.eclipse.e4.core.services)(bundle-version&gt;=2.3.200))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;This program and the accompanying materials are made available under the terms of the Apache License, Version 2.0.&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;"/>
+      <attribute name="copyright" value="Copyright (c) Contributors to the Eclipse Foundation"/>
+      <attribute name="osgi.identity" value="org.osgi.service.prefs"/>
+      <attribute name="documentation" value="https://docs.osgi.org/"/>
+      <attribute name="description" value="OSGi Companion Code for org.osgi.service.prefs Version 1.1.2"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.2.202109301733" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="bundle-symbolic-name" value="org.osgi.service.prefs"/>
+      <attribute name="bundle-version" value="1.1.2.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.package" value="org.osgi.service.prefs"/>
+      <attribute name="version" value="1.1.2" type="Version"/>
+      <attribute name="bnd.hashes" value="35728073,-637237544,-160238403,-1923478059" type="List&lt;Long&gt;"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.2.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.osgi.service.prefs"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.2.202109301733" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.osgi.service.prefs"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="20165" type="Long"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="url" value="org.osgi.service.prefs_1.1.2.202109301733.jar"/>
+      <attribute name="osgi.content" value="43C7C870710E363405D422DA653CCE0D798A4537F76E4930F79BCEADD3A55345"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE/compact1)(version=1.8))"/>
+    </requirement>
+  </resource>
+</repository>

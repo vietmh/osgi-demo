@@ -1,19 +1,21 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677045781417
-Bundle-Description: The test.combined DS component - built using OSGi 
- enRoute R7
+Built-By: vietmaihoang
+Build-Jdk: 17.0.6
+Created-By: 17.0.6 (Eclipse Adoptium)
+Bnd-LastModified: 1677212952510
+Bundle-Description: The test.combined DS component - built using OSGi en
+ Route R7
 Bundle-ManifestVersion: 2
 Bundle-Name: test.combined
 Bundle-SymbolicName: com.lablicate.test.combined
-Bundle-Version: 0.0.1.202302220603
-Created-By: 17.0.6 (Eclipse Adoptium)
+Bundle-Version: 0.0.1.202302240429
 Export-Package: test.combined;version="1.0.0"
 Import-Package: java.lang,test.combined;version="[1.0,2)"
-Provide-Capability: osgi.service;objectClass:List<String>="test.combin
- ed.TestCombinedInterface";uses:="test.combined"
-Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
- nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
- e=JavaSE)(version=17))"
+Provide-Capability: osgi.service;objectClass:List<String>="test.combined
+ .TestCombinedInterface";uses:="test.combined"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=17))"
 Service-Component: OSGI-INF/test.combined.TestCombinedImpl.xml
-Tool: Bnd-5.2.0.202010142003
+Tool: Bnd-6.2.0.202202251641
 

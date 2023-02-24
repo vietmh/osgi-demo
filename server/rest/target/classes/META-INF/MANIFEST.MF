@@ -2,15 +2,16 @@ Manifest-Version: 1.0
 Built-By: vietmaihoang
 Build-Jdk: 17.0.6
 Created-By: 17.0.6 (Eclipse Adoptium)
-Bnd-LastModified: 1677046633907
+Bnd-LastModified: 1677212866095
 Bundle-Description: The rest DS component - built using OSGi enRoute R7
 Bundle-ManifestVersion: 2
 Bundle-Name: rest
 Bundle-SymbolicName: com.lablicate.rest
-Bundle-Version: 0.0.1.202302220617
-Import-Package: java.io,java.lang,java.util.stream,javax.ws.rs,javax.ws.
- rs.container,javax.ws.rs.core,javax.ws.rs.ext,test.api;version="[1.0,2)
- ",test.combined;version="[1.0,2)"
+Bundle-Version: 0.0.1.202302240427
+Import-Package: java.io,java.lang,java.lang.invoke,java.util.stream,java
+ x.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.ecli
+ pse.chemclipse.logging.core,test.api;version="[1.0,2)",test.combined;ve
+ rsion="[1.0,2)"
 Private-Package: com.lablicate.rest,data
 Provide-Capability: osgi.service;objectClass:List<String>="com.lablicate
  .rest.RestComponentImpl";uses:="com.lablicate.rest",osgi.service;object
@@ -26,5 +27,5 @@ Require-Capability: osgi.service;filter:="(objectClass=test.api.Provider
  (osgi.ee=JavaSE)(version=17))"
 Service-Component: OSGI-INF/com.lablicate.rest.CorsFilter.xml,OSGI-INF/c
  om.lablicate.rest.RestComponentImpl.xml
-Tool: Bnd-5.2.0.202010142003
+Tool: Bnd-6.2.0.202202251641
 
