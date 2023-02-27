@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677231446615
+Bnd-LastModified: 1677246667414
 Bundle-Description: The test.combined DS component - built using OSGi 
  enRoute R7
 Bundle-ManifestVersion: 2
 Bundle-Name: test.combined
 Bundle-SymbolicName: com.lablicate.test.combined
-Bundle-Version: 0.0.1.202302240937
+Bundle-Version: 0.0.1.202302241351
 Created-By: 17.0.6 (Eclipse Adoptium)
 Export-Package: test.combined;version="1.0.0"
 Import-Package: java.lang,test.combined;version="[1.0,2)"

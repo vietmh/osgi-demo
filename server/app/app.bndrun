@@ -1,5 +1,5 @@
 index: target/index.xml;name="app"
-libs: ../libs/local.xml;name="local"
+libs: ../libs/local.xml;name="libs"
 -standalone: ${index}, ${libs}
 
 

@@ -2,13 +2,13 @@ Manifest-Version: 1.0
 Built-By: vietmaihoang
 Build-Jdk: 17.0.6
 Created-By: 17.0.6 (Eclipse Adoptium)
-Bnd-LastModified: 1677232678202
+Bnd-LastModified: 1677463268282
 Bundle-Description: The app application packaging project - using OSGi e
  nRoute R7
 Bundle-ManifestVersion: 2
 Bundle-Name: app
 Bundle-SymbolicName: com.lablicate.app
-Bundle-Version: 0.0.1.202302240957
+Bundle-Version: 0.0.1.202302270201
 Import-Package: java.lang
 Private-Package: config
 Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.configu
