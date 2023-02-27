@@ -10,21 +10,6 @@
 	<description>The app application packaging project - using OSGi enRoute R7</description>
 	<dependencies>
 		<dependency>
-			<groupId>com.lablicate</groupId>
-			<artifactId>rest</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lablicate</groupId>
-			<artifactId>test.impl</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lablicate</groupId>
-			<artifactId>test.combined</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.osgi.enroute</groupId>
 			<artifactId>osgi-api</artifactId>
 			<type>pom</type>
@@ -38,6 +23,22 @@
 			<groupId>org.osgi.enroute</groupId>
 			<artifactId>debug-bundles</artifactId>
 			<type>pom</type>
+		</dependency>
+		<!-- Lablicate -->
+		<dependency>
+			<groupId>com.lablicate</groupId>
+			<artifactId>rest</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lablicate</groupId>
+			<artifactId>test.impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lablicate</groupId>
+			<artifactId>test.combined</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -58,7 +59,7 @@
 				<artifactId>bnd-export-maven-plugin</artifactId>
 				<configuration>
 					<bndruns>
-						<bndrun>app.bndrun</bndrun>
+						<bndrun>debug.bndrun</bndrun>
 					</bndruns>
 				</configuration>
 			</plugin>

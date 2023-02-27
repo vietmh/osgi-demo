@@ -10,7 +10,7 @@
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<bnd.version>5.2.0</bnd.version>
+		<bnd.version>6.2.0</bnd.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -33,6 +33,16 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>p2-repo</id>
+			<name>P2 Repository</name>
+			<url>https://download.eclipse.org/modeling/emf/emf/builds/release/latest</url>
+		</repository>
+		<repository>
+			<id>eclipse-orbit</id>
+			<name>Eclipse Orbit</name>
+			<url>https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
