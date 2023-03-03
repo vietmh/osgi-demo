@@ -10,8 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +24,6 @@ import org.eclipse.chemclipse.processing.core.IProcessingInfo;
 import org.eclipse.chemclipse.wsd.converter.chromatogram.ChromatogramConverterWSD;
 import org.eclipse.chemclipse.wsd.model.core.IChromatogramWSD;
 import org.eclipse.core.runtime.NullProgressMonitor;
-import org.osgi.service.cm.Configuration;
 import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -58,22 +55,6 @@ public class RestComponentImpl {
 		InputStream is = getClass().getClassLoader().getResourceAsStream("data/traces.json");
 		String result = new BufferedReader(new InputStreamReader(is)).lines().collect(Collectors.joining("\n"));
 		return result;
-	}
-
-	@Path("config")
-	@GET
-	public String dumpConfigs() throws IOException {
-		Configuration compImplConfig = configAdmin.getConfiguration("test.impl.ComponentImpl");
-		Dictionary<String, Object> properties = compImplConfig.getProperties();
-		final String SAMPLE_PROPERTY = "osgi.http.whiteboard.servlet.multipart.enabled";
-		if (properties == null) {
-			properties = new Hashtable<String, Object>();
-		}
-
-		properties.put(SAMPLE_PROPERTY, true);
-		compImplConfig.update(properties);
-		return (String) properties.get(SAMPLE_PROPERTY);
-
 	}
 
 	@Path("adf/real")

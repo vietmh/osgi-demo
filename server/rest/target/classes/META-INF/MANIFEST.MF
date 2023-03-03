@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677816458815
+Bnd-LastModified: 1677816627665
 Bundle-Description: The rest DS component - built using OSGi enRoute R
  7
 Bundle-ManifestVersion: 2
 Bundle-Name: rest
 Bundle-SymbolicName: com.lablicate.rest
-Bundle-Version: 0.0.1.202303030407
+Bundle-Version: 0.0.1.202303030410
 Created-By: 17.0.6 (Eclipse Adoptium)
 Import-Package: java.io,java.lang,java.lang.invoke,java.net,java.nio.f
  ile,java.util,java.util.function,java.util.stream,javax.ws.rs,javax.w
