@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Collection;
+import java.util.Dictionary;
+import java.util.Hashtable;
 import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
@@ -20,10 +22,14 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import org.eclipse.chemclipse.logging.core.Logger;
+//import org.eclipse.chemclipse.logging.core.Logger;
+import org.osgi.service.cm.Configuration;
+import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import test.api.ProviderInterface;
 import test.combined.TestCombinedInterface;
@@ -39,7 +45,10 @@ public class RestComponentImpl {
 	@Reference
 	TestCombinedInterface tcInterface;
 
-	private static final Logger logger = Logger.getLogger(RestComponentImpl.class);
+	@Reference
+	ConfigurationAdmin configAdmin;
+
+	private static final Logger logger = LoggerFactory.getLogger(RestComponentImpl.class);
 
 	@Path("adf/sample")
 	@GET
@@ -54,8 +63,24 @@ public class RestComponentImpl {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String proveImportedSuccess() {
-		logger.info("hello world");
+		logger.error("hello world aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n\n\n\n\n\n\n");
 		return pInterface.getName() + " " + tcInterface.getName() + " " + logger.getClass().getName();
+	}
+
+	@Path("config")
+	@GET
+	public String dumpConfigs() throws IOException {
+		Configuration compImplConfig = configAdmin.getConfiguration("org.apache.aries.jax.rs.whiteboard.default");
+		Dictionary<String, Object> properties = compImplConfig.getProperties();
+		final String SAMPLE_PROPERTY = "osgi.http.whiteboard.servlet.multipart.enabled";
+		if (properties == null) {
+			properties = new Hashtable<String, Object>();
+		}
+
+		properties.put(SAMPLE_PROPERTY, true);
+		compImplConfig.update(properties);
+		return String.valueOf(properties.get(SAMPLE_PROPERTY));
+
 	}
 
 	@POST

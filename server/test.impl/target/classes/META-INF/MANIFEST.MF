@@ -1,19 +1,21 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677231447989
-Bundle-Description: The test.impl DS component - built using OSGi enRo
- ute R7
+Built-By: vietmaihoang
+Build-Jdk: 17.0.6
+Created-By: 17.0.6 (Eclipse Adoptium)
+Bnd-LastModified: 1677838231718
+Bundle-Description: The test.impl DS component - built using OSGi enRout
+ e R7
 Bundle-ManifestVersion: 2
 Bundle-Name: test.impl
 Bundle-SymbolicName: com.lablicate.test.impl
-Bundle-Version: 0.0.1.202302240937
-Created-By: 17.0.6 (Eclipse Adoptium)
+Bundle-Version: 0.0.1.202303031010
 Import-Package: java.lang,test.api;version="[1.0,1.1)"
 Private-Package: test.impl
-Provide-Capability: osgi.service;objectClass:List<String>="test.api.Pr
- oviderInterface";uses:="test.api"
-Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
- nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
- e=JavaSE)(version=17))"
+Provide-Capability: osgi.service;objectClass:List<String>="test.api.Prov
+ iderInterface";uses:="test.api"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=17))"
 Service-Component: OSGI-INF/test.impl.ComponentImpl.xml
 Tool: Bnd-6.2.0.202202251641
 
