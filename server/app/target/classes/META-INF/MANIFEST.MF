@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677841125298
+Bnd-LastModified: 1677847370351
 Bundle-Description: The app application packaging project - using OSGi
   enRoute R7
 Bundle-ManifestVersion: 2
 Bundle-Name: app
 Bundle-SymbolicName: com.lablicate.app
-Bundle-Version: 0.0.1.202303031058
+Bundle-Version: 0.0.1.202303031242
 Created-By: 17.0.6 (Eclipse Adoptium)
 Import-Package: java.lang
 Private-Package: config

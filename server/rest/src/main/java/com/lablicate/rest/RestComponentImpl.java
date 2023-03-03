@@ -63,7 +63,7 @@ public class RestComponentImpl {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String proveImportedSuccess() {
-		logger.error("hello world aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n\n\n\n\n\n\n");
+		logger.error("hello world\n\n\n\n\n\n\n");
 		return pInterface.getName() + " " + tcInterface.getName() + " " + logger.getClass().getName();
 	}
 
@@ -80,7 +80,6 @@ public class RestComponentImpl {
 		properties.put(SAMPLE_PROPERTY, true);
 		compImplConfig.update(properties);
 		return String.valueOf(properties.get(SAMPLE_PROPERTY));
-
 	}
 
 	@POST
@@ -103,7 +102,7 @@ public class RestComponentImpl {
 				}
 			}
 
-			return Response.ok(String.join("aaaaaa\n\n")).build();
+			return Response.ok("Successful uploading file " + part.getSubmittedFileName()).build();
 		}
 
 		return Response.status(Status.PRECONDITION_FAILED).build();
