@@ -4,6 +4,7 @@ import java.util.List;
 
 class Trace {
 
+	// Have to be public or having public getter
 	public List<Double> x;
 	public List<Double> y;
 	public String type;
