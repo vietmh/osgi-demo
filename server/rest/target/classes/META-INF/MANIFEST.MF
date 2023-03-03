@@ -1,30 +1,35 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1677231447432
+Bnd-LastModified: 1677814678041
 Bundle-Description: The rest DS component - built using OSGi enRoute R
  7
 Bundle-ManifestVersion: 2
 Bundle-Name: rest
 Bundle-SymbolicName: com.lablicate.rest
-Bundle-Version: 0.0.1.202302240937
+Bundle-Version: 0.0.1.202303030337
 Created-By: 17.0.6 (Eclipse Adoptium)
-Import-Package: java.io,java.lang,java.lang.invoke,java.util.stream,ja
- vax.ws.rs,javax.ws.rs.container,javax.ws.rs.core,javax.ws.rs.ext,org.
- eclipse.chemclipse.logging.core,test.api;version="[1.0,2)",test.combi
- ned;version="[1.0,2)"
-Private-Package: com.lablicate.rest,data
+Import-Package: java.io,java.lang,java.util,java.util.stream,javax.ser
+ vlet,javax.servlet.http,javax.ws.rs,javax.ws.rs.container,javax.ws.rs
+ .core,javax.ws.rs.ext,org.eclipse.chemclipse.logging.core,test.api;ve
+ rsion="[1.0,2)",test.combined;version="[1.0,2)"
+Private-Package: com.lablicate.rest,data,static
 Provide-Capability: osgi.service;objectClass:List<String>="com.lablica
  te.rest.RestComponentImpl";uses:="com.lablicate.rest",osgi.service;ob
- jectClass:List<String>="javax.ws.rs.container.ContainerResponseFilter
- ";uses:="javax.ws.rs.container"
+ jectClass:List<String>="javax.servlet.Servlet";uses:="javax.servlet",
+ osgi.service;objectClass:List<String>="javax.ws.rs.container.Containe
+ rResponseFilter";uses:="javax.ws.rs.container"
 Require-Capability: osgi.service;filter:="(objectClass=test.api.Provid
  erInterface)";effective:=active,osgi.service;filter:="(objectClass=te
  st.combined.TestCombinedInterface)";effective:=active,osgi.extender;f
  ilter:="(&(osgi.extender=osgi.component)(version>=1.4.0)(!(version>=2
- .0.0)))",osgi.implementation;filter:="(&(osgi.implementation=osgi.jax
- rs)(version>=1.0.0)(!(version>=2.0.0)))",osgi.contract;osgi.contract=
- JavaJAXRS;filter:="(&(osgi.contract=JavaJAXRS)(version=2.1.0))",osgi.
- ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+ .0.0)))",osgi.implementation;filter:="(&(osgi.implementation=osgi.htt
+ p)(version>=1.1.0)(!(version>=2.0.0)))",osgi.implementation;filter:="
+ (&(osgi.implementation=osgi.jaxrs)(version>=1.0.0)(!(version>=2.0.0))
+ )",osgi.contract;osgi.contract=JavaServlet;filter:="(&(osgi.contract=
+ JavaServlet)(version=3.1.0))",osgi.contract;osgi.contract=JavaJAXRS;f
+ ilter:="(&(osgi.contract=JavaJAXRS)(version=2.1.0))",osgi.ee;filter:=
+ "(&(osgi.ee=JavaSE)(version=17))"
 Service-Component: OSGI-INF/com.lablicate.rest.CorsFilter.xml,OSGI-INF
- /com.lablicate.rest.RestComponentImpl.xml
+ /com.lablicate.rest.RestComponentImpl.xml,OSGI-INF/com.lablicate.rest
+ .UploadServlet.xml
 Tool: Bnd-6.2.0.202202251641
 
