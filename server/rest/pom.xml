@@ -37,9 +37,59 @@
 		<dependency>
 			<groupId>org.eclipse.chemclipse</groupId>
 			<artifactId>org.eclipse.chemclipse.logging</artifactId>
-			<version>0.9.0.202302171017</version>
+			<version>0.9.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lablicate</groupId>
+			<artifactId>com.lablicate.xxd.converter.supplier.adf</artifactId>
+			<version>1.5.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.wsd.model</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/../libs/org.eclipse.chemclipse.logging_0.9.0.202302171017.jar</systemPath>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.wsd.model_0.9.0.202302240223.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.processing</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.processing_0.9.0.202302240223.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.wsd.converter</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.wsd.converter_0.9.0.202302240223.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>org.eclipse.equinox.common</artifactId>
+			<version>3.6.0.v20100503</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.converter</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.converter_0.9.0.202302240223.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.model</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.model_0.9.0.202302240223.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.chemclipse</groupId>
+			<artifactId>org.eclipse.chemclipse.support</artifactId>
+			<version>0.9.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.chemclipse.support_0.9.0.202302240223.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>
