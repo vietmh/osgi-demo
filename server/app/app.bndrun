@@ -30,20 +30,12 @@ libs: ../libs/local.xml;name="libs"
 	com.lablicate.test.combined;version='[0.0.1,0.0.2)',\
 	com.lablicate.test.impl;version='[0.0.1,0.0.2)',\
 	org.apache.felix.configurator;version='[1.0.6,1.0.7)',\
-	com.fasterxml.jackson.core.jackson-annotations;version='[2.9.0,2.9.1)',\
-	com.fasterxml.jackson.core.jackson-core;version='[2.9.6,2.9.7)',\
-	com.fasterxml.jackson.core.jackson-databind;version='[2.9.6,2.9.7)',\
-	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base;version='[2.9.6,2.9.7)',\
-	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider;version='[2.9.6,2.9.7)',\
-	com.fasterxml.jackson.module.jackson-module-jaxb-annotations;version='[2.9.6,2.9.7)',\
-	org.apache.aries.jax.rs.jackson;version='[1.0.2,1.0.3)',\
 	org.apache.felix.configadmin;version='[1.9.26,1.9.27)',\
-	slf4j.api;version='[1.7.36,1.7.37)'
+	slf4j.api;version='[1.7.36,1.7.37)',\
+	com.lablicate.app;version='[0.0.1,0.0.2)'
 	
 	
 -resolve: manual
 -runrequires: \
 	bnd.identity;id='com.lablicate.rest',\
-	bnd.identity;id='org.apache.felix.configurator',\
-	bnd.identity;id='org.apache.aries.jax.rs.jackson',\
-	bnd.identity;id='org.apache.felix.configadmin'
+	bnd.identity;id='com.lablicate.app'

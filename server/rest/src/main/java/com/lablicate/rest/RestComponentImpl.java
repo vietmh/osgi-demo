@@ -4,9 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Collection;
-import java.util.Dictionary;
-import java.util.Hashtable;
 import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
@@ -22,8 +19,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-//import org.eclipse.chemclipse.logging.core.Logger;
-import org.osgi.service.cm.Configuration;
 import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -67,28 +62,12 @@ public class RestComponentImpl {
 		return pInterface.getName() + " " + tcInterface.getName() + " " + logger.getClass().getName();
 	}
 
-	@Path("config")
-	@GET
-	public String dumpConfigs() throws IOException {
-		Configuration compImplConfig = configAdmin.getConfiguration("org.apache.aries.jax.rs.whiteboard.default");
-		Dictionary<String, Object> properties = compImplConfig.getProperties();
-		final String SAMPLE_PROPERTY = "osgi.http.whiteboard.servlet.multipart.enabled";
-		if (properties == null) {
-			properties = new Hashtable<String, Object>();
-		}
-
-		properties.put(SAMPLE_PROPERTY, true);
-		compImplConfig.update(properties);
-		return String.valueOf(properties.get(SAMPLE_PROPERTY));
-	}
-
 	@POST
 	@Path("modify/upload")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response upload(@Context HttpServletRequest request) throws IOException, ServletException {
 
-		Collection<Part> parts = request.getParts();
 		Part part = request.getPart("file");
 		if (part != null && part.getSubmittedFileName() != null && part.getSubmittedFileName().length() > 0) {
 
