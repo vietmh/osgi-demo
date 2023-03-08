@@ -13,10 +13,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Part;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
 
 import org.eclipse.chemclipse.model.core.IChromatogramOverview;
 import org.eclipse.chemclipse.model.core.IScan;
@@ -24,7 +32,6 @@ import org.eclipse.chemclipse.processing.core.IProcessingInfo;
 import org.eclipse.chemclipse.wsd.converter.chromatogram.ChromatogramConverterWSD;
 import org.eclipse.chemclipse.wsd.model.core.IChromatogramWSD;
 import org.eclipse.core.runtime.NullProgressMonitor;
-import org.osgi.service.cm.ConfigurationAdmin;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.http.whiteboard.propertytypes.HttpWhiteboardResource;
@@ -44,9 +51,6 @@ public class RestComponentImpl {
 
 	@Reference
 	TestCombinedInterface tcInterface;
-
-	@Reference
-	private ConfigurationAdmin configAdmin;
 
 	@Path("adf/sample")
 	@GET
@@ -104,4 +108,30 @@ public class RestComponentImpl {
 		}
 		return new Trace(xArray, yArray);
 	}
+
+	@POST
+	@Path("modify/upload")
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
+	@Produces(MediaType.TEXT_PLAIN)
+	public Response upload(@Context HttpServletRequest request) throws IOException, ServletException {
+
+		Part part = request.getPart("file");
+		if (part != null && part.getSubmittedFileName() != null && part.getSubmittedFileName().length() > 0) {
+
+			StringBuilder inputBuilder = new StringBuilder();
+			try (InputStream is = part.getInputStream();
+					BufferedReader br = new BufferedReader(new InputStreamReader(is))) {
+
+				String line;
+				while ((line = br.readLine()) != null) {
+					inputBuilder.append(line).append("\n");
+				}
+			}
+
+			return Response.ok("Successful uploading file " + part.getSubmittedFileName()).build();
+		}
+
+		return Response.status(Status.PRECONDITION_FAILED).build();
+	}
+
 }

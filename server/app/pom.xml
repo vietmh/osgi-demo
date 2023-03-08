@@ -41,6 +41,16 @@
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.configadmin</artifactId>
+			<version>1.9.26</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.configurator</artifactId>
 		</dependency>
